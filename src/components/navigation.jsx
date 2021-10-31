@@ -16,7 +16,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            PROSHOPS NZ
+            PROSHOPS.CO.NZ
           </a>{' '}
         </div>
 
