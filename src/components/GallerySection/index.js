@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import Cart from '../../videos/cart.mkv';
