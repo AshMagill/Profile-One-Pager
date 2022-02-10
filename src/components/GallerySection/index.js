@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import Cart from '../../videos/cart.mkv';
@@ -41,8 +40,6 @@ const GallerySection = () => {
             </GalleryVideo>
           }
           overlayTransitionDuration={1000}
-          videoStyle={{ border: '1px solid gray', borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Ratings}
@@ -55,7 +52,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Carousel}
@@ -68,7 +64,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Pagination}
@@ -81,7 +76,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Search}
@@ -94,7 +88,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Orders}
@@ -107,7 +100,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Product}
@@ -120,7 +112,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Users}
@@ -133,7 +124,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={AOrder}
@@ -146,7 +136,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Delivered}
@@ -159,7 +148,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
         <HoverVideoPlayer
           videoSrc={Checkout}
@@ -172,7 +160,6 @@ const GallerySection = () => {
           }
           overlayTransitionDuration={1000}
           videoStyle={{ borderRadius: '0.5rem' }}
-          controls
         />
       </GalleryGrid>
     </GalleryContainer>

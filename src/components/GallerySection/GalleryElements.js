@@ -45,7 +45,7 @@ export const GalleryContainer = styled.div`
 export const GalleryVideo = styled.div`
   background-color: #83a598;
   position: absolute;
-  opacity: 95%;
+  opacity: 90%;
   top: 0;
   left: 0;
   width: 100%;
