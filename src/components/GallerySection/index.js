@@ -32,6 +32,9 @@ const GallerySection = () => {
       <GalleryGrid>
         <HoverVideoPlayer
           videoSrc={Cart}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -43,6 +46,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Ratings}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -55,6 +61,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Carousel}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -67,6 +76,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Pagination}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -79,6 +91,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Search}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -91,6 +106,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Orders}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -103,6 +121,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Product}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -115,6 +136,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Users}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -127,6 +151,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={AOrder}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -139,6 +166,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Delivered}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
@@ -151,6 +181,9 @@ const GallerySection = () => {
         />
         <HoverVideoPlayer
           videoSrc={Checkout}
+          muted
+          unloadVideoOnPaused
+          none
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
