@@ -9,7 +9,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: #83a598;
+  background: #32302f;
 `;
 
 export const FormWrap = styled.div`
@@ -20,13 +20,15 @@ export const FormWrap = styled.div`
 `;
 
 export const Icon = styled(Link)`
-  margin-left: 32px;
   margin-top: 1rem;
+  margin-left: 2rem;
   text-decoration: none;
-  color: #32302f;
+  color: #83a598;
   font-size: 28px;
-
   @media screen and (max-width: 480px) {
+    margin-left: 0rem;
+    text-align: center;
+    font-size: 35px;
   }
 `;
 
@@ -37,34 +39,31 @@ export const FormContent = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 480px) {
-    padding: 10px;
   }
 `;
 
 export const Form = styled.form`
   background: #32302f;
   max-width: 400px;
-  height: 90%;
+  height: 100%;
   width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
   padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
   @media screen and (max-width: 400px) {
   }
 `;
 
 export const FormH1 = styled.h1`
-  color: #fbf1c7;
+  color: #83a598;
   font-size: 28px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 1rem;
   @media screen and (max-width: 480px) {
     font-size: 28px;
+    color: #fbf1c7;
   }
 `;
 
@@ -73,12 +72,18 @@ export const FormLabel = styled.label`
   color: #fbf1c7;
   height: 2rem;
 `;
+
 export const FormInput = styled.input`
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
   background: #fbf1c7;
   height: 3rem;
+  padding: 1rem;
+  font-size: 18px;
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const MessageInput = styled.textarea`
@@ -88,6 +93,11 @@ export const MessageInput = styled.textarea`
   background: #fbf1c7;
   height: 15rem;
   width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const FormButton = styled.button`
@@ -99,7 +109,9 @@ export const FormButton = styled.button`
   cursor: pointer;
   height: 3rem;
   margin-top: 1rem;
+  text-decoration: none;
 `;
+
 export const Text = styled.span`
   text-align: center;
   color: #fff;
