@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "../../images/intro-bg.jpg";
-import Button from "../ButtonElement";
+import React from 'react';
+import Image from '../../images/intro-bg.jpg';
+import Button from '../ButtonElement';
 import {
   HeroContainer,
   HeroBg,
@@ -9,13 +9,13 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-} from "./HeroElements";
+} from './HeroElements';
 
 const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <HeroImage src={Image} alt="sorry, it appears this image is missing" />
+        <HeroImage src={Image} alt='sorry, it appears this image is missing' />
       </HeroBg>
       <HeroContent>
         <HeroH1>Thinking of selling online?</HeroH1>
@@ -25,11 +25,11 @@ const HeroSection = () => {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="about"
+            to='about'
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
+            exact='true'
             offset={-80}
           >
             Learn more

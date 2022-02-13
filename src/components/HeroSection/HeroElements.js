@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Image from "../../images/intro-bg.jpg";
+import styled from 'styled-components';
+import Image from '../../images/intro-bg.jpg';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -56,31 +56,31 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fbf1c7;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    //font-size: 40px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    //font-size: 32px;
   }
 `;
 
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fbf1c7;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    //font-size: 24px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
@@ -89,4 +89,9 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 18px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;

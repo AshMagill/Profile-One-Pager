@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Footer = styled.nav`
   background: #83a598;
   height: 80px;
-  font-size: 1rem;
+  font-size: 18px;
   transition: 0.8s all ease;
   @media screen and (max-width: 950px) {
     height: 160px;

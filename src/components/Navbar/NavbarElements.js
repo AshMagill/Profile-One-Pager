@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: #32302f;
@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 18px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -33,12 +33,15 @@ export const NavbarLogo = styled(LinkR)`
   color: #83a598;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 18px;
   display: flex;
   align-items: center;
   margin-left: 0;
-  font-weight: bold;
+  //font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 950px) {
+    font-size: 28px;
   }
 `;
 
@@ -79,6 +82,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 18px;
 
   &.active {
     font-weight: bold;
@@ -98,15 +102,16 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 0.5rem;
   white-space: nowrap;
   padding: 10px 22px;
-  background: #83a598;
-  color: #32302f;
-  font-size: 16px;
-  font-weight: bold;
+  //background: #83a598;
+  color: #83a598;
+  font-size: 18px;
+  //font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
   }
 `;

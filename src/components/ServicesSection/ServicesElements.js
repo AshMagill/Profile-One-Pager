@@ -1,21 +1,14 @@
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
-  width: 100;
-  height: 1000px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #32302f;
-  padding: 5rem 0;
-
-  @media screen and (max-width: 786px) {
-    height: 1900px;
-  }
-
-  @media screen and (max-width: 480px) {
-  }
+  padding: 3rem 0;
 `;
 
 export const ServicesWrapper = styled.div`
@@ -43,43 +36,43 @@ export const ServicesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   max-height: 340px;
-  padding: 30px 0;
+  //padding: 30px 0;
   transition: all 0.2s ease-in-out;
 `;
 
 export const ServicesIcon = styled.img`
-font-size: 40px
+font-size: 35px
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
   color: #83a598;
-  margin-bottom: 64px;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 408px) {
-    font-size: 2rem;
+    //font-size: 2rem;
     margin-bottom: 1rem;
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const ServicesH2 = styled.p`
   text-align: center;
-  font-size: 40px;
+  font-size: 18px;
   margin-bottom: 10px;
   color: #83a598;
 `;
 
 export const ServicesP2 = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #83a598;
   width: 100px;
 `;
 export const ServicesP = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #83a598;
   margin: 30px;

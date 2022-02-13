@@ -1,27 +1,19 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FeaturesContainer = styled.div`
-  width: 100;
-  height: 800px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
   background: #32302f;
-  padding: 5rem 0;
-
-  @media screen and (max-width: 786px) {
-    height: 1300px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1500px;
-  }
 `;
 
 export const FeaturesWrapper = styled.div`
   max-width: 1000px;
-  margin: 0;
+  //margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -45,8 +37,8 @@ export const FeaturesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   max-height: 340px;
-  padding: 30px 0;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2rem;
 `;
 
 export const FeaturesIcon = styled.img`
@@ -56,25 +48,25 @@ export const FeaturesIcon = styled.img`
 `;
 
 export const FeaturesH1 = styled.h1`
-  font_size: 2.5rem;
+  font-size: 35px;
   color: #83a598;
-  margin-bottom: 64px;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 408px) {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    //font-size: 2rem;
+    //margin-bottom: 1rem;
   }
 `;
 
 export const FeaturesH2 = styled.h2`
   text-align: center;
-  font_size: 0.8rem;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 1rem;
   color: #83a598;
 `;
 
 export const FeaturesP = styled.p`
-  font_size: 0.8rem;
+  font-size: 18px;
   text-align: center;
   color: #83a598;
 `;

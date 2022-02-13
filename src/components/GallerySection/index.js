@@ -17,6 +17,7 @@ import {
   GalleryContainer,
   GalleryH1,
   GalleryP,
+  GalleryP2,
   GalleryVideo,
   GalleryText,
 } from './GalleryElements';
@@ -38,7 +39,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Full featured shopping cart</h1>
+                <GalleryP2>Full featured shopping cart</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -52,7 +53,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Product Reviews and Ratings</h1>
+                <GalleryP2>Product Reviews and Ratings</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -67,7 +68,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Top products carousel</h1>
+                <GalleryP2>Top products carousel</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -82,7 +83,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Product pagination</h1>
+                <GalleryP2>Product pagination</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -97,7 +98,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Product search feature</h1>
+                <GalleryP2>Product search feature</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -112,7 +113,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>User profile with orders</h1>
+                <GalleryP2>User profile with orders</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -127,7 +128,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Admin Product managment</h1>
+                <GalleryP2>Admin Product managment</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -142,7 +143,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Admin user managment</h1>
+                <GalleryP2>Admin user managment</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -157,7 +158,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Admin Order details page</h1>
+                <GalleryP2>Admin Order details page</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -172,7 +173,7 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Mark orders as delivered option</h1>
+                <GalleryP2>Mark orders as delivered option</GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }
@@ -187,7 +188,9 @@ const GallerySection = () => {
           pausedOverlay={
             <GalleryVideo>
               <GalleryText>
-                <h1>Checkout process (shipping, paymemt method etc.)</h1>
+                <GalleryP2>
+                  Checkout process (shipping, paymemt method etc.)
+                </GalleryP2>
               </GalleryText>
             </GalleryVideo>
           }

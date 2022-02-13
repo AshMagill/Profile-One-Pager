@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-scroll";
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const Button = styled(Link)`
   background: #83a598;
@@ -8,7 +8,7 @@ const Button = styled(Link)`
   border-radius: 0.5rem;
   white-space: nowrap;
   padding: 14px 48px;
-  font_size: 20px;
+  font_size: 18px;
   ouline: none;
   border: none;
   cursor: pointer;

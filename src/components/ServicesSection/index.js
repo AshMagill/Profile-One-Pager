@@ -11,17 +11,17 @@ import {
   ServicesWrapper,
   ServicesCard,
   ServicesP2,
-  ServicesP,
+  ServicesH2,
 } from './ServicesElements';
 
 const Services = () => {
   return (
     <ServicesContainer id='services'>
       <ServicesH1>Tools</ServicesH1>
-      <ServicesP>
+      <ServicesH2>
         The following are tools that I use to make my websites, they well know
         as being modern and reliable.
-      </ServicesP>
+      </ServicesH2>
       <ServicesWrapper>
         <a href='https://www.mongodb.com' style={{ textDecoration: 'none' }}>
           <ServicesCard>
