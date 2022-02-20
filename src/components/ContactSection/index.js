@@ -30,6 +30,8 @@ const SignIn = () => {
     send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        window.alert('Message Sent! I will get back to you shortly - Ash.');
+        window.location.reload();
       })
       .catch((err) => {
         console.log('FAILED...', err);
