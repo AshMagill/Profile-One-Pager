@@ -36,7 +36,7 @@ const GallerySection = () => {
         <button onClick={() => setIsVideoPlaying(!isVideoPlaying)}>
           <HoverVideoPlayer
             videoSrc={Cart}
-            focoused={isVideoPlaying}
+            focused={isVideoPlaying}
             muted
             none
             pausedOverlay={
