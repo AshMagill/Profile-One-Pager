@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
+import VideoModal from 'react-player';
 
 import Cart from '../../videos/cart.mkv';
 //import Ratings from '../../videos/ratings.mkv';
@@ -34,7 +35,6 @@ const GallerySection = () => {
       <GalleryGrid>
         <HoverVideoPlayer
           videoSrc={Cart}
-          muted
           none
           pausedOverlay={
             <GalleryVideo>
@@ -43,7 +43,8 @@ const GallerySection = () => {
               </GalleryText>
             </GalleryVideo>
           }
-          overlayTransitionDuration={1000}
+          overlayTransitionDuration={500}
+          style={{ padding: '0.1rem' }}
         />
       </GalleryGrid>
     </GalleryContainer>

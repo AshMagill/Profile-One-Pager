@@ -89,7 +89,7 @@ export const AboutImage = styled.img`
   overflow: hidden;
   height: 100%;
   width: auto;
-  opacity: 80%;
+  opacity: 77%;
   transform: scale(1.3);
   @media screen and (max-width: 1000px) {
   }
