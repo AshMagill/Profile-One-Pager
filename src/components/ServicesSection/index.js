@@ -19,8 +19,8 @@ const Services = () => {
     <ServicesContainer id='services'>
       <ServicesH1>Tools</ServicesH1>
       <ServicesH2>
-        The following are tools that I use to make my websites, they well know
-        as being modern and reliable.
+        The following are tools that I use to make my websites, all are well
+        known as being modern and reliable.
       </ServicesH2>
       <ServicesWrapper>
         <a href='https://www.mongodb.com' style={{ textDecoration: 'none' }}>

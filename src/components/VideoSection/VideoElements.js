@@ -27,7 +27,7 @@ export const VideoContainer = styled.div`
     width: 95%;
   }
   @media screen and (max-height: 380px) {
-    width: 80%;
+    width: 70%;
   }
 `;
 
@@ -50,6 +50,6 @@ export const Exit = styled(Link)`
     margin-top: 0px;
   }
   @media screen and (max-height: 380px) {
-    margin-top: 0.5rem;
+    margin-top: -0.4rem;
   }
 `;
