@@ -2,7 +2,13 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { BigPlayButton } from 'video-react';
 
-import { Container, VideoContainer, Exit, VideoPlayer } from './VideoElements';
+import {
+  Container,
+  VideoContainer,
+  Exit,
+  Row,
+  VideoPlayer,
+} from './VideoElements';
 
 const Video = () => {
   const location = useLocation();
@@ -10,7 +16,9 @@ const Video = () => {
 
   return (
     <Container>
-      <Exit to='/'>return</Exit>
+      <Row>
+        <Exit to='/'>x</Exit>
+      </Row>
       <VideoContainer>
         <VideoPlayer src={mp4}>
           <BigPlayButton position='center' />

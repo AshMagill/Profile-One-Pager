@@ -19,14 +19,18 @@ export const FormWrap = styled.div`
   justify-content: center;
 `;
 
+export const Row = styled.div`
+  display: flex;
+  justify-content: end;
+`;
+
 export const Icon = styled(Link)`
   margin-top: 1rem;
-  margin-left: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
-  color: #83a598;
+  color: #fb4934;
   font-size: 28px;
   @media screen and (max-width: 480px) {
-    margin-left: 0rem;
     text-align: center;
     font-size: 35px;
   }

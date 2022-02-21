@@ -3,6 +3,7 @@ import { send } from 'emailjs-com';
 import {
   Container,
   FormWrap,
+  Row,
   Icon,
   FormContent,
   Form,
@@ -46,7 +47,9 @@ const SignIn = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to='/'>proshops.co.nz</Icon>
+          <Row>
+            <Icon to='/'>x</Icon>
+          </Row>
           <FormContent>
             <Form action='#'>
               <FormH1>Get in touch</FormH1>

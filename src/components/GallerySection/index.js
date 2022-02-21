@@ -2,16 +2,15 @@ import React from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import Cart from '../../videos/cart.mkv';
-//import Ratings from '../../videos/ratings.mkv';
-//import Carousel from '../../videos/carousel.mkv';
-//import Pagination from '../../videos/pagination.mkv';
-//import Search from '../../videos/search.mkv';
-//import Orders from '../../videos/orders.mkv';
-//import Product from '../../videos/product.mkv';
-//import Users from '../../videos/users.mkv';
-//import AOrder from '../../videos/orders_admin.mkv';
-//import Delivered from '../../videos/delivered.mkv';
-//import Checkout from '../../videos/checkout.mkv';
+import Ratings from '../../videos/ratings.mkv';
+import Carousel from '../../videos/carousel.mkv';
+import Pagination from '../../videos/pagination.mkv';
+import Search from '../../videos/search.mkv';
+import Orders from '../../videos/orders.mkv';
+import Product from '../../videos/product.mkv';
+import AOrder from '../../videos/orders_admin.mkv';
+import Delivered from '../../videos/delivered.mkv';
+import Checkout from '../../videos/checkout.mkv';
 
 import {
   GalleryGrid,
@@ -22,7 +21,6 @@ import {
   GalleryVideo,
   GalleryText,
   NavBtnLink,
-  GalleryImage,
 } from './GalleryElements';
 
 const GallerySection = () => {
@@ -30,8 +28,8 @@ const GallerySection = () => {
     <GalleryContainer id='gallery'>
       <GalleryH1>Gallery</GalleryH1>
       <GalleryP>
-        Here are some of the features I can provide, the layout and style are
-        all fully customisable!
+        Here are just some of the features I can provide, the layout and style
+        are all fully customisable!
       </GalleryP>
       <GalleryGrid>
         <NavBtnLink to='/video' state={{ mp4: Cart }}>
@@ -41,7 +39,142 @@ const GallerySection = () => {
             pausedOverlay={
               <GalleryVideo>
                 <GalleryText>
-                  <GalleryP2>Full featured shopping cart</GalleryP2>
+                  <GalleryP2>Shopping Cart</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Ratings }}>
+          <HoverVideoPlayer
+            videoSrc={Ratings}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Reviews and Ratings</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Carousel }}>
+          <HoverVideoPlayer
+            videoSrc={Carousel}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Products Carousel</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Pagination }}>
+          <HoverVideoPlayer
+            videoSrc={Pagination}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Product Pagination</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Search }}>
+          <HoverVideoPlayer
+            videoSrc={Search}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Search Feature</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Orders }}>
+          <HoverVideoPlayer
+            videoSrc={Orders}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Manage Orders</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Product }}>
+          <HoverVideoPlayer
+            videoSrc={Product}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Manage Products</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: AOrder }}>
+          <HoverVideoPlayer
+            videoSrc={AOrder}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Manage Orders</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Delivered }}>
+          <HoverVideoPlayer
+            videoSrc={Delivered}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Mark Orders</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
+        <NavBtnLink to='/video' state={{ mp4: Checkout }}>
+          <HoverVideoPlayer
+            videoSrc={Checkout}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Checkout Process</GalleryP2>
                 </GalleryText>
               </GalleryVideo>
             }
@@ -55,150 +188,3 @@ const GallerySection = () => {
 };
 
 export default GallerySection;
-
-//todo
-//add image with opaque screen on it for mobile
-//style video page
-
-//<HoverVideoPlayer
-//videoSrc={Ratings}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Product Reviews and Ratings</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Carousel}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Top products carousel</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Pagination}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Product pagination</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Search}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Product search feature</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Orders}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>User profile with orders</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Product}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Admin Product managment</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Users}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Admin user managment</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={AOrder}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Admin Order details page</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Delivered}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>Mark orders as delivered option</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>
-//<HoverVideoPlayer
-//videoSrc={Checkout}
-//muted
-//none
-//pausedOverlay={
-//<GalleryVideo>
-//<GalleryText>
-//<GalleryP2>
-//Checkout process (shipping, paymemt method etc.)
-//</GalleryP2>
-//</GalleryText>
-//</GalleryVideo>
-//}
-//overlayTransitionDuration={1000}
-//videoStyle={{ borderRadius: '0.5rem' }}
-///>

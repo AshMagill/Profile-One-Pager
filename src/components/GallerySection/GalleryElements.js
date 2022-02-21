@@ -21,11 +21,14 @@ export const GalleryVideo = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 102%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const GalleryText = styled.div`
@@ -91,7 +94,6 @@ export const GalleryGrid = styled.div`
 export const NavBtnLink = styled(Link)`
   border-radius: 0.5rem;
   white-space: nowrap;
-  padding: 10px 22px;
   //background: #83a598;
   color: #83a598;
   font-size: 18px;
