@@ -1,6 +1,5 @@
 import React from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
-import VideoModal from 'react-player';
 
 import Cart from '../../videos/cart.mkv';
 //import Ratings from '../../videos/ratings.mkv';
@@ -22,6 +21,8 @@ import {
   GalleryP2,
   GalleryVideo,
   GalleryText,
+  NavBtnLink,
+  GalleryImage,
 } from './GalleryElements';
 
 const GallerySection = () => {
@@ -33,25 +34,32 @@ const GallerySection = () => {
         all fully customisable!
       </GalleryP>
       <GalleryGrid>
-        <HoverVideoPlayer
-          videoSrc={Cart}
-          none
-          pausedOverlay={
-            <GalleryVideo>
-              <GalleryText>
-                <GalleryP2>Full featured shopping cart</GalleryP2>
-              </GalleryText>
-            </GalleryVideo>
-          }
-          overlayTransitionDuration={500}
-          style={{ padding: '0.1rem' }}
-        />
+        <NavBtnLink to='/video' state={{ mp4: Cart }}>
+          <HoverVideoPlayer
+            videoSrc={Cart}
+            none
+            pausedOverlay={
+              <GalleryVideo>
+                <GalleryText>
+                  <GalleryP2>Full featured shopping cart</GalleryP2>
+                </GalleryText>
+              </GalleryVideo>
+            }
+            overlayTransitionDuration={500}
+            style={{ padding: '0.1rem' }}
+          />
+        </NavBtnLink>
       </GalleryGrid>
     </GalleryContainer>
   );
 };
 
 export default GallerySection;
+
+//todo
+//add image with opaque screen on it for mobile
+//style video page
+
 //<HoverVideoPlayer
 //videoSrc={Ratings}
 //muted

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const GalleryContainer = styled.div`
   background: #32302f;
@@ -84,5 +85,23 @@ export const GalleryGrid = styled.div`
 
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
+  }
+`;
+
+export const NavBtnLink = styled(Link)`
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  padding: 10px 22px;
+  //background: #83a598;
+  color: #83a598;
+  font-size: 18px;
+  //font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
   }
 `;
