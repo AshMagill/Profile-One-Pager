@@ -20,7 +20,7 @@ const Video = () => {
         <Exit to='/'>x</Exit>
       </Row>
       <VideoContainer>
-        <VideoPlayer src={mp4}>
+        <VideoPlayer autoplay='false' src={mp4}>
           <BigPlayButton position='center' />
         </VideoPlayer>
       </VideoContainer>

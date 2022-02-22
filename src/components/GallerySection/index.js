@@ -1,16 +1,16 @@
 import React from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 
-import Cart from '../../videos/cart.mkv';
-import Ratings from '../../videos/ratings.mkv';
-import Carousel from '../../videos/carousel.mkv';
-import Pagination from '../../videos/pagination.mkv';
-import Search from '../../videos/search.mkv';
-import Orders from '../../videos/orders.mkv';
-import Product from '../../videos/product.mkv';
-import AOrder from '../../videos/orders_admin.mkv';
-import Delivered from '../../videos/delivered.mkv';
-import Checkout from '../../videos/checkout.mkv';
+import Cart from './../../videos/cart.mkv';
+import Ratings from './../../videos/ratings.mkv';
+import Carousel from './../../videos/carousel.mkv';
+import Pagination from './../../videos/pagination.mkv';
+import Search from './../../videos/search.mkv';
+import Orders from './../../videos/orders.mkv';
+import Product from './../../videos/product.mkv';
+import AOrder from './../../videos/orders_admin.mkv';
+import Delivered from './../../videos/delivered.mkv';
+import Checkout from './../../videos/checkout.mkv';
 
 import {
   GalleryGrid,
@@ -35,7 +35,6 @@ const GallerySection = () => {
         <NavBtnLink to='/video' state={{ mp4: Cart }}>
           <HoverVideoPlayer
             videoSrc={Cart}
-            none
             pausedOverlay={
               <GalleryVideo>
                 <GalleryText>
