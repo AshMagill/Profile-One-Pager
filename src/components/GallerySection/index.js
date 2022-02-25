@@ -34,6 +34,8 @@ const GallerySection = () => {
       <GalleryGrid>
         <NavBtnLink to='/video' state={{ mp4: Cart }}>
           <HoverVideoPlayer
+            autoPlay
+            muted
             videoSrc={Cart}
             pausedOverlay={
               <GalleryVideo>
