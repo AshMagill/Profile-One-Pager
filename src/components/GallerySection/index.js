@@ -67,6 +67,7 @@ const GallerySection = () => {
           <HoverVideoPlayer
             videoSrc={Carousel}
             none
+            autoPaused='true'
             pausedOverlay={
               <GalleryVideo>
                 <GalleryText>
