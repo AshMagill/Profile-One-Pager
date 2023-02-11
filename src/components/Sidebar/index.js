@@ -27,9 +27,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="services" onClick={toggle}>
             Tools
           </SidebarLink>
-          <SidebarLink to="gallery" onClick={toggle}>
-            Gallery
-          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="/contact">Contact</SidebarRoute>

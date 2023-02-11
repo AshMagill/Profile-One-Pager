@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import { FaBars } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
@@ -11,7 +11,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from './NavbarElements';
+} from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    window.addEventListener("scroll", changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -35,20 +35,20 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavbarLogo to='/' onClick={toggleHome}>
+          <NavbarLogo to="/" onClick={toggleHome}>
             Proshops.co.nz
           </NavbarLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars size='32' />
+            <FaBars size="32" />
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks
-                to='about'
+                to="about"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'
+                exact="true"
                 offset={-80}
               >
                 About
@@ -56,11 +56,11 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to='features'
+                to="features"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'
+                exact="true"
                 offset={-80}
               >
                 Features
@@ -68,31 +68,19 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to='services'
+                to="services"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'
+                exact="true"
                 offset={-80}
               >
                 Tools
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
-                to='gallery'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
-              >
-                Gallery
-              </NavLinks>
-            </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/contact'>Contact</NavBtnLink>
+            <NavBtnLink to="/contact">Contact</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

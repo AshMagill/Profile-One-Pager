@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ export const ServicesWrapper = styled.div`
   max-width: 1000px;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 40px;
   padding: 0;
